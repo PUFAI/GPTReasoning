@@ -26,6 +26,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger("reasoning_transformer_training")
 
+base_folder = os.path.abspath("..")
+print(f"Your base folder is: {base_folder}")
+sys.path.append(base_folder)
+
 # Import local modules
 from transformer.params import ModelConfig
 from transformer.transformer import ReasoningTransformer
