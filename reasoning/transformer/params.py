@@ -1,3 +1,4 @@
+import os 
 base_folder = os.path.abspath("..")
 class ModelConfig:
     def __init__(self):
