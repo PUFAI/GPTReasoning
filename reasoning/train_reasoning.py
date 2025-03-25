@@ -33,9 +33,8 @@ sys.path.append(base_folder)
 # Import local modules
 from transformer.params import ModelConfig
 from transformer.transformer import ReasoningTransformer
-from data.reasoning_data import get_reasoning_data
-from tokenization.custom_tokenizer import get_custom_tokenizer
-from tokenization.dataset_tokenize import tokenize_reasoning_dataset
+from data import get_reasoning_data
+from tokenization import get_custom_tokenizer, tokenize_reasoning_dataset
 
 
 class CosineWarmupScheduler:
